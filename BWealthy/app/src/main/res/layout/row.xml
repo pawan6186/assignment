@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_normal"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/word_ion_size"
+        android:layout_height="@dimen/word_ion_size"
+        android:background="@android:color/black"
+        android:padding="@dimen/padding_small"
+        />
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:textSize="@dimen/list_heading"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/word_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:singleLine="false"
+        android:lines="2"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_below="@id/word"
+        />
+
+</RelativeLayout>
